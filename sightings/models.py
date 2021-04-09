@@ -25,7 +25,7 @@ class Squirrels(models, Model):
     AM = "AM"
     Shift_choices=[
             (PM, _("PM")),
-            (AM, _"AM")),
+            (AM, _("AM")),
     ]
     Shift = models.CharField(
             max_length = 15,
@@ -156,7 +156,7 @@ class Squirrels(models, Model):
 
     Runs_From = models.BooleanField(
         help_text = _('Runs From?'),
-        default = False,
+        default = False
     )
 
     def __str__(self):
