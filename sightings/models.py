@@ -83,6 +83,84 @@ class Squirrels(models, Model):
             choices=Location_choices,
     )
 
+    Specific_location=models.CharField(
+            max_length=100,
+            null=True,
+    )
+
+    Running = models.BooleanField(
+        help_text = _('Running or not?'),
+        default = False,
+    )
+    
+    Chasing = models.BooleanField(
+        help_text = _('Chasing or not?'),
+        default = False,
+    )
+    
+    Climbing = models.BooleanField(
+        help_text =_('Climbing or not?'),
+        default = False,
+    )
+    
+    Eating = models.BooleanField(
+        help_text = _('Eating or not?'),
+        default = False,
+    )
+    
+    Foraging = models.BooleanField(
+        help_text = _('Foraging or not?'),
+        default = False,
+    )
+   
+    Other_Activities = models.CharField(
+        help_text = _('Other Activities'),
+        max_length =100,
+        null = True,
+    )
+    
+    Kuks = models.BooleanField(
+        help_text =_('Kuks or not?'),
+        default = False,
+    )
+    
+    Quaas = models.BooleanField(
+        help_text =_('Quaas or not?'),
+        default = False,
+    )
+    
+    Moans = models.BooleanField(
+            help_text=_('Moans or not?'),
+            default = False,
+    )   
+    
+    Tail_Flags = models.BooleanField(
+        help_text = _('Tail flags or nots?'),
+        default = False,
+    )
+
+    Tail_Twitches = models.BooleanField(
+        help_text = _('Tail Twitches or nots?'),
+        default = False,
+    )
+    
+    Approaches = models.BooleanField(
+        help_text = _('Approaches or not?'),
+        default = False,
+    )
+    
+    Indifferent = models.BooleanField(
+        help_text =_('Indifferent or not?'),
+        default = False,
+    )
+
+    Runs_From = models.BooleanField(
+        help_text = _('Runs From?'),
+        default = False,
+    )
+
+    def __str__(self):
+        return self.Unique_squirrel_id
 
 
 
