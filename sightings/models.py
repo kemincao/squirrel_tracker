@@ -47,7 +47,7 @@ class Squirrels(models, Model):
     ]
     Age=models.CharField(
             max_length=15,
-            null=True
+            null=True,
             help_text=_("Age"),
             choices = Age_choices,
     )
@@ -64,7 +64,7 @@ class Squirrels(models, Model):
     ]
     Fur = models.CharField(
             max_length=15,
-            null=True
+            null=True,
             help_text=_("Primary Fur Color"),
             choices=Primary_fur_color_choices,
     )
@@ -79,7 +79,7 @@ class Squirrels(models, Model):
     ]
     Location=models.CharField(
             max_length=15,
-            null=True
+            null=True,
             choices=Location_choices,
     )
 
@@ -162,8 +162,3 @@ class Squirrels(models, Model):
     def __str__(self):
         return self.Unique_squirrel_id
 
-
-
-
-
-Create your models here.
