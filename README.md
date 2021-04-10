@@ -6,12 +6,12 @@ On the page, users can access all the details of each squirrels, basic stats of 
 
 
 
-##Group
+## Group
 
 Project Group 21
 UNIs: [kc3001, ql2418]
 
 
-##Link to the server
+## Link to the server
 
 https://squirrel21.appspot.com
