@@ -69,12 +69,12 @@ class Squirrels(models.Model):
             choices=Primary_fur_color_choices,
     )
 
-    Ground_Plane='Ground_Plane'
-    Above_Ground='Above_Ground'
+    Ground_Plane='Ground Plane'
+    Above_Ground='Above Ground'
     Other='Other'
     Location_choices=[
             (Ground_Plane,_('Ground Plane')),
-            (Above_Ground,_('Above_Ground')),
+            (Above_Ground,_('Above Ground')),
             (Other,_('Other')),
     ]
     Location=models.CharField(
