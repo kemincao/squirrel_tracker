@@ -45,7 +45,7 @@ class Command(BaseCommand):
                         Approaches = (row[26] == 'true'),
                         Indifferent = (row[27] == 'true'),
                         Runs_From = (row[28] == 'true'),
-                        )   
+                        )  
                 unique_id.append(row[2])
 
             self.stdout.write(self.style.SUCCESS('Data Import Done'))
