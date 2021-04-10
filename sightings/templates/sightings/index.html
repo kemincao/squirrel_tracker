@@ -5,26 +5,29 @@
     </head>
 
     <body>
-        <h3>View the squirrels stats</h3>
+        <h2>View the squirrels stats</h3>
         <a href='{%url 'sightings:stats'%}'>Squirrel statistics</a>
 
-        <h3>Check out where the squirrels are</h3>
+        <h2>Check out where the squirrels are</h3>
         <a href='/map'>Squirrel Map</a>
 
+        <h2>Want to add a new squirrel?</h1>
+        <a href='/sightings/add/'>Add it here!</a>
+       
+	<h2>Here are all the squirrels</h2>
         <ul>
-            {% for squirrel in Squirrels %}
-            <li>
-
+            {% for squirrel in squirrels %}
+	    <li>{{squirrel.Unique_squirrel_id}}
                 <a href='/sightings/{{squirrel.Unique_squirrel_id}}/details'>Click to see details about this squirrel</a>
-            <br>
-                <a href='/sightings/{{squirrel.Unique_Squirrel_ID}}/'>Update this squirrel</a>
-
+		<br>
+                <a href='/sightings/{{squirrel.Unique_squirrel_id}}/'>Update this squirrel</a>
+		<br>
             </li>
             {% endfor %}
         </ul>
         
         <br>
-        <h1>Want to add a new squirrel?</h1>
+        <h2>Want to add a new squirrel?</h1>
         <a href='/sightings/add/'>Add it here!</a>
         <br>
 

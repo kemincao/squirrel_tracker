@@ -11,7 +11,7 @@ def index(request):
     return render(request, 'sightings/index.html', context)
 
 def details(request, Unique_squirrel_id):
-    squirrel = Squirrels.objects.get(id=Unique_squirrel_id)
+    squirrel = Squirrels.objects.get(Unique_squirrel_id=Unique_squirrel_id)
     context={
         "squirrel": squirrel,
     }
@@ -24,7 +24,7 @@ def update(request, Unique_squirrel_id):
         form = SquirrelForm(request.POST, instance=Squirrels)
         if form.is_valid():
             form.save()
-            squirrel = Squirrels.objects.get(id=Unique_squirrel_id)
+            squirrel = Squirrels.objects.get(Unique_squirrel_id=Unique_squirrel_id)
             context={
                 "squirrel": squirrel,
             }
@@ -39,7 +39,7 @@ def add(request):
         form = SquirrelForm(request.POST)
         if form.is_valid():
             form.save()
-            squirrel = Squirrels.objects.get(id=Unique_squirrel_id)
+            squirrel = Squirrels.objects.get(Unique_squirrel_id=Unique_squirrel_id)
             context={
                 "squirrel": squirrel,
             }
