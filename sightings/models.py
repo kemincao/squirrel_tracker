@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils.translation import gettext as _
 
-class Squirrels(models, Model):
+class Squirrels(models.Model):
     X =models.DecimalField(
             max_digits=100,
             decimal_places = 20,
