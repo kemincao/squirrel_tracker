@@ -6,18 +6,18 @@
 
     <body>
         <h3>View the squirrels stats</h3>
-        <a href='{%url 'sightings:stats'%}'> Squirrel statistics</a>
+        <a href='{%url 'sightings:stats'%}'>Squirrel statistics</a>
 
         <h3>Check out where the squirrels are</h3>
-        <a href='/map/index.html'> Squirrel Map </a>
+        <a href='/map'>Squirrel Map</a>
 
         <ul>
             {% for squirrel in Squirrels %}
             <li>
 
-                <a href='/sightings/{{squirrel.Unique_squirrel_id}}/details'>  Click to see details about this squirrel </a>
+                <a href='/sightings/{{squirrel.Unique_squirrel_id}}/details'>Click to see details about this squirrel</a>
             <br>
-                <a href='/sightings/{{squirrel.Unique_Squirrel_ID}}/'> Update this squirrel </a>
+                <a href='/sightings/{{squirrel.Unique_Squirrel_ID}}/'>Update this squirrel</a>
 
             </li>
             {% endfor %}
@@ -31,3 +31,4 @@
 
     </body>
 </html>
+

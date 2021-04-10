@@ -4,7 +4,7 @@ from .models import Squirrels
 from .forms import SquirrelForm
 
 def index(request):
-    squirrels = Squirrels.obejcts.all()
+    squirrels = Squirrels.objects.all()
     context = {
         'squirrels': squirrels
     }
