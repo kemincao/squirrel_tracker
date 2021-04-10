@@ -10,7 +10,7 @@ def index(request):
     }
     return render(request, 'sightings/index.html', context)
 
-def detail(request, Unique_squirrel_id):
+def details(request, Unique_squirrel_id):
     squirrel = Squirrels.objects.get(id=Unique_squirrel_id)
     context={
         "squirrel": squirrel,
@@ -44,13 +44,13 @@ def add(request):
                 "squirrel": squirrel,
             }
             return redirect('sightings/details.html',context)
-        else:
-            form = SquirrelsForm()
+    else:
+        form = SquirrelForm()
     context = {'form': form}
     return render(request, 'sightings/update.html', context)
 
 def stats(request):
-    squirrel_stat1 = Squirrels.obejcts.all().count()
+    squirrel_stat1 = Squirrels.objects.all().count()
     squirrel_stat2 = Squirrels.objects.filter(Fur = "Cinnamon").count()
     squirrel_stat3 = Squirrels.objects.filter(Age = "Adult").count()
     squirrel_stat4 = Squirrels.objects.filter(Location = "Ground Plane").count()
