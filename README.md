@@ -14,4 +14,4 @@ UNIs: [kc3001, ql2418]
 
 ## Link to the server
 
-https://squirrel21.appspot.com
+https://tfa-project-2021.wl.r.appspot.com/
