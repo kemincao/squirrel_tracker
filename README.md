@@ -14,4 +14,4 @@ UNIs: [kc3001, ql2418]
 
 ## Link to the server
 
-https://tfa-project-2021.wl.r.appspot.com/
+https://tfa-project-2021.wl.r.appspot.com/sightings/
